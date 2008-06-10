@@ -27,7 +27,7 @@
 ** the BSD license as a permissible license under the exception.
 **
 ****************************************************************************/
-
+//bla
 #include "test.h"
 
 #include <QtGui>
