@@ -1,0 +1,136 @@
+<ui version="4.0" >
+ <class>DialogPluginSettingsClass</class>
+ <widget class="QDialog" name="DialogPluginSettingsClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>393</width>
+    <height>202</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Plugin Einstellungen</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="qtfarm.qrc" >
+    <normaloff>:/bilder/services_edit16.png</normaloff>:/bilder/services_edit16.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" >
+   <item>
+    <widget class="QLabel" name="label" >
+     <property name="text" >
+      <string>Welche Plugins sollen beim Programmstart geladen werden?</string>
+     </property>
+     <property name="wordWrap" >
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="cbPlugins" >
+     <property name="text" >
+      <string>Beim Programmstart immer fragen.</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="twPlugins" >
+     <property name="editTriggers" >
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="alternatingRowColors" >
+      <bool>true</bool>
+     </property>
+     <property name="selectionMode" >
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior" >
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="showGrid" >
+      <bool>false</bool>
+     </property>
+     <property name="gridStyle" >
+      <enum>Qt::NoPen</enum>
+     </property>
+     <property name="sortingEnabled" >
+      <bool>false</bool>
+     </property>
+     <property name="columnCount" >
+      <number>2</number>
+     </property>
+     <column>
+      <property name="text" >
+       <string>Plugin</string>
+      </property>
+     </column>
+     <column>
+      <property name="text" >
+       <string>Beschreibung</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" >
+     <item>
+      <spacer name="horizontalSpacer" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pbOK" >
+       <property name="text" >
+        <string>OK</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources>
+  <include location="qtfarm.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>pbOK</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogPluginSettingsClass</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>105</x>
+     <y>250</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>43</x>
+     <y>260</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

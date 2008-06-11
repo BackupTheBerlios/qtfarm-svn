@@ -1,0 +1,85 @@
+<ui version="4.0" >
+ <class>WidgetFilterClass</class>
+ <widget class="QWidget" name="WidgetFilterClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>236</width>
+    <height>36</height>
+   </rect>
+  </property>
+  <property name="cursor" >
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle" >
+   <string>WidgetFilter</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" >
+   <property name="margin" >
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" >
+     <item>
+      <widget class="QWidget" native="1" name="widget" >
+       <layout class="QHBoxLayout" name="horizontalLayout_3" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QwwClearLineEdit" name="lineEdit" >
+          <property name="cursor" >
+           <cursorShape>ArrowCursor</cursorShape>
+          </property>
+          <property name="icon" >
+           <iconset resource="qtfarm.qrc" >
+            <normaloff>:/bilder/button_cancel.png</normaloff>:/bilder/button_cancel.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox" >
+          <property name="sizePolicy" >
+           <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize" >
+           <size>
+            <width>150</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize" >
+           <size>
+            <width>150</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="sizeAdjustPolicy" >
+           <enum>QComboBox::AdjustToContents</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>QwwClearLineEdit</class>
+   <extends>QwwButtonLineEdit</extends>
+   <header>qwwclearlineedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="qtfarm.qrc" />
+ </resources>
+ <connections/>
+</ui>
