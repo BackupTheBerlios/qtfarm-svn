@@ -38,8 +38,6 @@
 #include "centraltab.h"
 
 
-
-
 class QtFarm : public QMainWindow
 {
     Q_OBJECT
@@ -104,7 +102,6 @@ private:
     QIcon folderIcon;
     QIcon fileIcon;
     int toolTreeIndex;
-
 
     QTabWidget *centralTabWidget;
     CornerWidget *cornerWidget;    

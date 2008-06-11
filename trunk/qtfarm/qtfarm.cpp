@@ -30,7 +30,6 @@
 #include "qtfarm.h"
 
 
-
 QtFarm::QtFarm(QWidget *parent)
     : QMainWindow(parent)
 {
