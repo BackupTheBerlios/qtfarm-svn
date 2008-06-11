@@ -27,7 +27,7 @@
 ** the BSD license as a permissible license under the exception.
 **
 ****************************************************************************/
-
+qqq
 #include "test.h"
 
 test::test(QWidget *parent)
