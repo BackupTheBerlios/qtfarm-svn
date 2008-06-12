@@ -500,8 +500,10 @@ void QtFarm::castPlugin(QObject *plugin)
 	        }
 	        else if(iWidget.key() == QtFarmSoilInterface::TabContent){
 	        	//alle Contens in ein QStackedLayout/Widget packen?
+	        	if(soilTab){
 	        	QWidget *tabContent = iWidget.value();
 	        	soilTab->addWidget(tabContent);
+	        	}
 	        }
 	        ++iWidget;
 		}
@@ -510,7 +512,9 @@ void QtFarm::castPlugin(QObject *plugin)
 	    QMap<QtFarmSoilInterface::Data, QVariant> listMap = qtFarmSoilInterface->listMap();
 		DockWidgetList *dwTest = new DockWidgetList("Pflanzenschutzmittel", this);
 		dwTest->init(listMap, filter);
-		soilMenu->addAction(dwTest->toggleViewAction());
+		if(soilMenu){
+			soilMenu->addAction(dwTest->toggleViewAction());
+		}
 				    	
 		return;
 	}
