@@ -532,6 +532,8 @@ void QtFarm::castPlugin(QObject *plugin)
 	        	centralTabWidget->addTab(stockTab, tr("Lager"));
 	        }
 	        else if(iWidget.key() == QtFarmStockInterface::Menu){
+	        	
+	        	//Fehler im Menu: andere Lösung suchen
 	        	stockMenu = qobject_cast<QMenu *>(iWidget.value());
 	        	if(stockMenu)
 	        		menubar->addAction(stockMenu->menuAction());	            		 
