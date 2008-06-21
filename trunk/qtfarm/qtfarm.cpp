@@ -493,6 +493,8 @@ void QtFarm::castPlugin(QObject *plugin)
 	        else if(iWidget.key() == QtFarmSoilInterface::Menu){
 	        	soilMenu = qobject_cast<QMenu *>(iWidget.value());
 	        	if(soilMenu)
+	        		//andere Lösung finden: soilMenu = menubar->addMenu(...)
+	        		
 	        		menubar->addAction(soilMenu->menuAction());	            		 
 	        }
 	        else if(iWidget.key() == QtFarmSoilInterface::DockWidget){
